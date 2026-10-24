@@ -69,11 +69,11 @@ Guide: [Computer use safety](https://support.claude.com/en/articles/14128542)
 - [Game (unknown)](https://www.pcgamingwiki.com/wiki/PCGamingWiki:Sample_article/Game_(unknown))
 - [Series](https://www.pcgamingwiki.com/wiki/PCGamingWiki:Sample_article/Series)
 
-When one changes it opens a pull request; merge it and tag a release. Forks need **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** turned on.
+When one changes it opens a pull request, assigned to the repository owner for review. Merging it triggers [`auto-release.yml`](.github/workflows/auto-release.yml), which bumps the patch version and publishes a release, so a merge is all it takes. Forks need **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** turned on.
 
 ## Releases
 
-The skills live unpacked in [`skills/`](skills/). [`release.yml`](.github/workflows/release.yml) validates and packs them on every push; pushing a `v*` tag (or running the workflow manually with a tag) publishes a release with the `.skill` files attached. To pack one by hand, zip the skill folder itself (folder at the archive root).
+The skills live unpacked in [`skills/`](skills/). [`release.yml`](.github/workflows/release.yml) validates and packs them on every push; pushing a `v*` tag (or running the workflow manually with a tag) publishes a release with the `.skill` files attached. Sync merges release automatically as a patch bump; bump the minor or major version yourself by tagging when a skill's own content changes. To pack one by hand, zip the skill folder itself (folder at the archive root).
 
 ## Usage examples
 

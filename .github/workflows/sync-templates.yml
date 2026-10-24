@@ -55,7 +55,9 @@ jobs:
           body: |
             Weekly sync of `skills/pcgamingwiki-editor/assets/` from PCGamingWiki's
             [sample articles](https://www.pcgamingwiki.com/wiki/PCGamingWiki:Sample_article).
-            Review the diff, check `SKILL.md` still matches the templates, then merge
-            and tag a new release.
+            Review the diff and check `SKILL.md` still matches the templates.
+            Merging this PR publishes a new patch release automatically.
           add-paths: skills/pcgamingwiki-editor/assets/*.wikitext
+          assignees: ${{ github.repository_owner }}
+          reviewers: ${{ github.repository_owner }}
           delete-branch: true

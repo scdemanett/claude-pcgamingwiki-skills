@@ -1,0 +1,43 @@
+name: Release after template sync
+
+# When a sync PR is merged, bump the patch version and dispatch the
+# "Package skills" workflow with that tag. Dispatching is used rather than
+# pushing a tag because a tag pushed with GITHUB_TOKEN would not trigger
+# release.yml; workflow_dispatch is one of the two events that still does.
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'sync/pcgw-sample-articles'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute next patch version
+        id: next
+        run: |
+          set -euo pipefail
+          latest=$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' --sort=-v:refname | head -n1)
+          if [ -z "$latest" ]; then
+            next=v1.0.0
+          else
+            IFS=. read -r major minor patch <<< "${latest#v}"
+            next="v${major}.${minor}.$((patch + 1))"
+          fi
+          echo "latest=${latest:-none} next=$next"
+          echo "tag=$next" >> "$GITHUB_OUTPUT"
+
+      - name: Dispatch the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run release.yml --ref main -f tag="${{ steps.next.outputs.tag }}"
