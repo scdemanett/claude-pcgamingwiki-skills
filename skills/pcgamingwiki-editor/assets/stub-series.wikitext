@@ -1,0 +1,4 @@
+<includeonly>{{Seriesbox|entries=
+{{Seriesbox/row|[[Sample article]]|2019}}
+{{Seriesbox/row|[[Non-existent article]]|2020}}
+}}</includeonly>

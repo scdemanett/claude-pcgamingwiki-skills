@@ -1,0 +1,461 @@
+{{stub}}
+{{Infobox game
+|cover        = GAME TITLE cover.jpg
+|developers   = 
+{{Infobox game/row/developer|DEVELOPER}}
+|publishers   = 
+{{Infobox game/row/publisher|PUBLISHER}}
+|engines      = 
+|release dates= 
+{{Infobox game/row/date|Windows|TBA}}
+|reception    = 
+{{Infobox game/row/reception|Metacritic|link|rating}}
+{{Infobox game/row/reception|OpenCritic|link|rating}}
+{{Infobox game/row/reception|IGDB|link|rating}}
+|taxonomy     =
+{{Infobox game/row/taxonomy/monetization      | One-time game purchase }}
+{{Infobox game/row/taxonomy/microtransactions | }}
+{{Infobox game/row/taxonomy/modes             | Multiplayer }}
+{{Infobox game/row/taxonomy/pacing            | }}
+{{Infobox game/row/taxonomy/perspectives      | }}
+{{Infobox game/row/taxonomy/controls          | }}
+{{Infobox game/row/taxonomy/genres            | }}
+{{Infobox game/row/taxonomy/sports            | }}
+{{Infobox game/row/taxonomy/vehicles          | }}
+{{Infobox game/row/taxonomy/art styles        | }}
+{{Infobox game/row/taxonomy/themes            | }}
+{{Infobox game/row/taxonomy/series            | PCGW Templates<!-- CHANGE TO THE ACTUAL SERIES NAME IF ONE EXISTS --> }}
+|steam appid  = 
+|steam appid side = 
+|gogcom id    = 
+|gogcom id side = 
+|official site= 
+|hltb         = 
+|igdb         = <!-- Only needs to be set if there is no IGDB reception row -->
+|lutris       = 
+|mobygames    = 
+|vndb         = 
+|strategywiki = 
+|wikipedia    = 
+|winehq       = 
+|license      = commercial
+}}
+
+{{Introduction
+|introduction      = 
+
+|release history   = 
+
+|current state     = 
+}}
+
+'''General information'''
+{{GOG.com links|000000000|game}}
+{{mm}} [https://steamcommunity.com/app/00000/discussions/ Steam Community Discussions]
+
+==Availability==
+{{Availability|
+{{Availability/row| retail | | unknown |  |  | Windows }}
+}}
+
+==Monetization==
+{{Monetization
+|ad-supported                = 
+|cross-game bonus            = 
+|dlc                         = 
+|expansion pack              = 
+|freeware                    = 
+|free-to-play                = 
+|one-time game purchase      = The game requires an upfront purchase to access.
+|subscription                = 
+|subscription gaming service = 
+}}
+
+===Microtransactions===
+{{Microtransactions
+|boost               = 
+|cosmetic            = 
+|currency            = 
+|finite spend        = 
+|infinite spend      = 
+|free-to-grind       = 
+|loot box            = 
+|none                = The game does not contain microtransactions.
+|player trading      = 
+|time-limited        = 
+|unlock              = 
+}}
+
+{{DLC|
+<!-- DLC rows goes below: -->
+
+}}
+
+==Game data==
+===Configuration file(s) location===
+{{Game data|
+{{Game data/config|Windows|}}
+}}
+
+===Save game data location===
+{{Game data|
+{{Game data/saves|Windows|}}
+}}
+
+===[[Glossary:Save game cloud syncing|Save game cloud syncing]]===
+{{Save game cloud syncing
+|epic games launcher       = 
+|epic games launcher notes = 
+|gog galaxy                = 
+|gog galaxy notes          = 
+|ea app                    = 
+|ea app notes              = 
+|icloud                    = 
+|icloud notes              = 
+|steam cloud               = 
+|steam cloud notes         = 
+|ubisoft connect           = 
+|ubisoft connect notes     = 
+|xbox cloud                = 
+|xbox cloud notes          = 
+}}
+
+==Video==
+{{Video
+|wsgf link                  = 
+|widescreen wsgf award      = 
+|multimonitor wsgf award    = 
+|ultrawidescreen wsgf award = 
+|4k ultra hd wsgf award     = 
+|widescreen resolution      = unknown
+|widescreen resolution notes= 
+|multimonitor               = unknown
+|multimonitor notes         = 
+|ultrawidescreen            = unknown
+|ultrawidescreen notes      = 
+|4k ultra hd                = unknown
+|4k ultra hd notes          = 
+|fov                        = unknown
+|fov notes                  = 
+|windowed                   = unknown
+|windowed notes             = 
+|borderless windowed        = unknown
+|borderless windowed notes  = 
+|anisotropic                = unknown
+|anisotropic notes          = 
+|antialiasing               = unknown
+|antialiasing notes         = 
+|upscaling                  = unknown
+|upscaling tech             = 
+|upscaling notes            = 
+|framegen                   = unknown
+|framegen tech              = 
+|framegen notes             = 
+|vsync                      = unknown
+|vsync notes                = 
+|60 fps                     = unknown
+|60 fps notes               = 
+|120 fps                    = unknown
+|120 fps notes              = 
+|hdr                        = unknown
+|hdr notes                  = 
+|ray tracing                = unknown
+|ray tracing notes          = 
+|color blind                = unknown
+|color blind notes          = 
+}}
+
+==Input==
+{{Input
+|key remap                     = unknown
+|key remap notes               = 
+|mouse sensitivity             = unknown
+|mouse sensitivity notes       = 
+|acceleration option           = unknown
+|acceleration option notes     = 
+|mouse menu                    = unknown
+|mouse menu notes              = 
+|keyboard and mouse prompts    = unknown
+|keyboard and mouse prompts notes = 
+|invert mouse y-axis           = unknown
+|invert mouse y-axis notes     = 
+|touchscreen                   = unknown
+|touchscreen notes             = 
+|controller support            = unknown
+|controller support notes      = 
+|full controller               = unknown
+|full controller notes         = 
+|controller remap              = unknown
+|controller remap notes        = 
+|controller sensitivity        = unknown
+|controller sensitivity notes  = 
+|invert controller y-axis      = unknown
+|invert controller y-axis notes= 
+|xinput controllers            = unknown
+|xinput controllers notes      = 
+|xbox prompts                  = unknown
+|xbox prompts notes            = 
+|impulse triggers              = unknown
+|impulse triggers notes        = 
+|directinput controllers       = unknown
+|directinput controllers notes = 
+|directinput prompts           = unknown
+|directinput prompts notes     = 
+|playstation controllers       = unknown
+|playstation controller models = 
+|playstation controllers notes = 
+|playstation prompts           = unknown
+|playstation prompts notes     = 
+|playstation motion sensors    = unknown
+|playstation motion sensors modes = 
+|playstation motion sensors notes = 
+|light bar support             = unknown
+|light bar support notes       = 
+|dualsense adaptive trigger support = unknown
+|dualsense adaptive trigger support modes = 
+|dualsense adaptive trigger support notes = 
+|dualsense haptics support     = unknown
+|dualsense haptics support notes = 
+|playstation connection modes  = 
+|playstation connection modes notes = 
+|nintendo controllers          = unknown
+|nintendo controller models    = 
+|nintendo controllers notes    = 
+|nintendo prompts              = unknown
+|nintendo prompts notes        = 
+|nintendo button layout        = unknown
+|nintendo button layout notes  = 
+|nintendo motion sensors       = unknown
+|nintendo motion sensors modes = 
+|nintendo motion sensors notes = 
+|nintendo connection modes     = 
+|nintendo connection modes notes = 
+|tracked motion controllers    = unknown
+|tracked motion controllers notes = 
+|tracked motion prompts        = unknown
+|tracked motion prompts notes  = 
+|other controllers             = unknown
+|other controllers notes       = 
+|peripheral devices            = unknown
+|peripheral device types       = 
+|peripheral devices notes      = 
+|other button prompts          = unknown
+|other button prompts notes    = 
+|controller hotplug            = unknown
+|controller hotplug notes      = 
+|input prompt override         = unknown
+|input prompt override notes   = 
+|haptic feedback               = unknown
+|haptic feedback notes         = 
+|haptic feedback hd            = unknown
+|haptic feedback hd notes      = 
+|haptic feedback hd controller models = 
+|digital movement supported    = unknown
+|digital movement supported notes = 
+|simultaneous input            = unknown
+|simultaneous input notes      = 
+|steam input api               = unknown
+|steam input api notes         = 
+|steam hook input              = unknown
+|steam hook input notes        = 
+|steam input prompts           = unknown
+|steam input prompts icons     = 
+|steam input prompts styles    = 
+|steam input prompts notes     = 
+|steam deck prompts            = unknown
+|steam deck prompts notes      = 
+|steam controller prompts      = unknown
+|steam controller prompts notes= 
+|steam input motion sensors    = unknown
+|steam input motion sensors modes = 
+|steam input motion sensors notes = 
+|steam input presets           = unknown
+|steam input presets notes     = 
+|steam cursor detection        = unknown
+|steam cursor detection notes  = 
+}}
+
+==Audio==
+{{Audio
+|separate volume           = unknown
+|separate volume notes     = 
+|surround sound            = unknown
+|surround sound notes      = 
+|subtitles                 = unknown
+|subtitles notes           = 
+|closed captions           = unknown
+|closed captions notes     = 
+|mute on focus lost        = unknown
+|mute on focus lost notes  = 
+|eax support               = 
+|eax support notes         = 
+|royalty free audio        = unknown
+|royalty free audio notes  = 
+|red book cd audio         = 
+|red book cd audio notes   = 
+|general midi audio        = 
+|general midi audio notes  = 
+}}
+
+{{L10n|content=
+{{L10n/switch
+ |language  = English
+ |interface = true
+ |audio     = unknown
+ |subtitles = unknown
+ |notes     = 
+ |fan       = 
+ |ref       = 
+}}
+}}
+
+==Network==
+{{Network/Multiplayer
+|local play           = unknown
+|local play players   = 
+|local play modes     = 
+|local play notes     = 
+|lan play             = unknown
+|lan play players     = 
+|lan play modes       = 
+|lan play notes       = 
+|online play          = unknown
+|online play players  = 
+|online play modes    = 
+|online play notes    = 
+|asynchronous         = 
+|asynchronous notes   = 
+|crossplay            = 
+|crossplay platforms  = 
+|crossplay notes      = 
+}}{{Network/Connections
+|matchmaking        = 
+|matchmaking notes  = 
+|p2p                = 
+|p2p notes          = 
+|dedicated          = 
+|dedicated notes    = 
+|self-hosting       = 
+|self-hosting notes = 
+|direct ip          = 
+|direct ip notes    = 
+}}{{Network/Ports
+|tcp  = 
+|udp  = 
+|upnp = 
+}}
+
+==Other information==
+===API===
+{{API
+|direct3d versions      = 
+|direct3d notes         = 
+|directdraw versions    = 
+|directdraw notes       = 
+|wing                   = 
+|wing notes             = 
+|opengl versions        = 
+|opengl notes           = 
+|glide versions         = 
+|glide notes            = 
+|software mode          = 
+|software mode notes    = 
+|mantle support         = 
+|mantle support notes   = 
+|metal support          = 
+|metal support notes    = 
+|vulkan versions        = 
+|vulkan notes           = 
+|dos modes              = 
+|dos modes notes        = 
+|windows 32-bit exe     = unknown
+|windows 64-bit exe     = unknown
+|windows arm app        = unknown
+|windows exe notes      = 
+|mac os x powerpc app   = unknown
+|macos intel 32-bit app = unknown
+|macos intel 64-bit app = unknown
+|macos arm app          = unknown
+|macos app notes        = 
+|linux powerpc app      = unknown
+|linux 32-bit executable= unknown
+|linux 64-bit executable= unknown
+|linux arm app          = unknown
+|linux 68k app          = unknown
+|linux executable notes = 
+|mac os powerpc app     = unknown
+|mac os 68k app         = unknown
+|mac os executable notes= 
+}}
+
+===Middleware===
+{{Middleware
+|physics          = 
+|physics notes    = 
+|audio            = 
+|audio notes      = 
+|interface        = 
+|interface notes  = 
+|input            = 
+|input notes      = 
+|cutscenes        = 
+|cutscenes notes  = 
+|multiplayer      = 
+|multiplayer notes= 
+|anticheat        = 
+|anticheat notes  = 
+}}
+
+==System requirements==
+{{System requirements
+|OSfamily = Windows
+
+|minTGT   = 
+|minOS    = 
+|minCPU   = 
+|minCPU2  = 
+|minRAM   = 
+|minHD    = 
+|minGPU   = 
+|minGPU2  = 
+|minVRAM  = 
+|minDX    = 
+
+|recTGT   = 
+|recOS    = 
+|recCPU   = 
+|recCPU2  = 
+|recRAM   = 
+|recHD    = 
+|recGPU   = 
+|recGPU2  = 
+|recVRAM  = 
+
+<!-- Please see the Editing Guide before filling in the following -->
+|alt1Title = 
+|alt1TGT   = 
+|alt1OS    = 
+|alt1CPU   = 
+|alt1CPU2  = 
+|alt1RAM   = 
+|alt1HD    = 
+|alt1GPU   = 
+|alt1GPU2  = 
+|alt1GPU3  = 
+|alt1VRAM  = 
+
+|alt2Title = 
+|alt2TGT   = 
+|alt2OS    = 
+|alt2CPU   = 
+|alt2CPU2  = 
+|alt2RAM   = 
+|alt2HD    = 
+|alt2GPU   = 
+|alt2GPU2  = 
+|alt2GPU3  = 
+|alt2VRAM  = 
+|notes     = 
+}}
+
+{{References}}

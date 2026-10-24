@@ -1,0 +1,61 @@
+name: Sync PCGW sample articles
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch sample articles
+        run: |
+          set -euo pipefail
+          ua="claude-pcgamingwiki-skills template sync (+https://github.com/${GITHUB_REPOSITORY})"
+          dir=skills/pcgamingwiki-editor/assets
+          # The MediaWiki API is used because index.php?action=raw sits behind a
+          # Cloudflare challenge that returns 403 to non-browser clients.
+          fetch() {
+            local page="$1" out="$2" tmp
+            tmp=$(mktemp)
+            curl -sSfL -A "$ua" -o "$tmp" -G \
+              --data-urlencode "titles=PCGamingWiki:Sample_article/${page}" \
+              --data-urlencode 'action=query' --data-urlencode 'prop=revisions' \
+              --data-urlencode 'rvprop=content' --data-urlencode 'rvslots=main' \
+              --data-urlencode 'format=json' --data-urlencode 'formatversion=2' \
+              'https://www.pcgamingwiki.com/w/api.php'
+            if ! jq -e '.query.pages[0].revisions[0].slots.main.content' "$tmp" >/dev/null 2>&1; then
+              echo "::error::${page} did not return wikitext (blocked, moved or missing)"
+              head -c 300 "$tmp"; echo; exit 1
+            fi
+            jq -j '.query.pages[0].revisions[0].slots.main.content' "$tmp" > "$dir/$out"
+            printf '\n' >> "$dir/$out"
+            rm -f "$tmp"
+            echo "Fetched $page -> $out"
+          }
+          fetch 'Game_(singleplayer)' stub-singleplayer.wikitext
+          fetch 'Game_(multiplayer)'  stub-multiplayer.wikitext
+          fetch 'Game_(unknown)'      stub-unknown.wikitext
+          fetch 'Series'              stub-series.wikitext
+          git diff --stat
+
+      - name: Open pull request if anything changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: sync/pcgw-sample-articles
+          commit-message: 'Sync stub templates from PCGamingWiki sample articles'
+          title: 'Sync stub templates from PCGamingWiki sample articles'
+          body: |
+            Weekly sync of `skills/pcgamingwiki-editor/assets/` from PCGamingWiki's
+            [sample articles](https://www.pcgamingwiki.com/wiki/PCGamingWiki:Sample_article).
+            Review the diff, check `SKILL.md` still matches the templates, then merge
+            and tag a new release.
+          add-paths: skills/pcgamingwiki-editor/assets/*.wikitext
+          delete-branch: true
