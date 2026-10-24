@@ -12,6 +12,7 @@
 {{Infobox game/row/reception|Metacritic|link|rating}}
 {{Infobox game/row/reception|OpenCritic|link|rating}}
 {{Infobox game/row/reception|IGDB|link|rating}}
+|real ai level= unknown
 |taxonomy     =
 {{Infobox game/row/taxonomy/monetization      | One-time game purchase }}
 {{Infobox game/row/taxonomy/microtransactions | }}
@@ -394,6 +395,20 @@
 }}
 
 ==Other information==
+===AI usage===
+{{AI usage
+|code         = 
+|2d graphics  = 
+|3d graphics  = 
+|animation    = 
+|audio        = 
+|speech       = 
+|video        = 
+|text         = 
+|localization = 
+|concept      = 
+}}
+
 ===API===
 {{API
 |direct3d versions      = 
