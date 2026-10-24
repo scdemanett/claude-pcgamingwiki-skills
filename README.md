@@ -4,10 +4,10 @@ Two [Claude skills](https://support.claude.com/) for getting accurate save and c
 
 | Skill | What it does |
 |---|---|
-| **pcgamingwiki-editor** | Drafts new PCGW game articles and edits existing wikitext: infobox, taxonomy, availability, monetization, AI-usage fields, and especially the **Game data** section. Ships with PCGW's sample-article stubs (synced weekly) and a conventions reference covering template parameter orders, taxonomy gotchas and Ludusavi-relevant path formats. Can preview, publish and upload the cover through Claude in Chrome. |
-| **game-save-recon** | Investigates a game on your own PC: identifies it via the Steam API, fingerprints the engine from the install folder, finds and classifies save/config files, launches the game to walk its options menu, then hands off to `pcgamingwiki-editor` to write and publish the Game data rows. |
+| **game-save-recon** | Runs first. Investigates a game on your own PC: identifies it via the Steam API, fingerprints the engine from the install folder, finds and classifies save/config files, launches the game to walk its options menu, then hands off to `pcgamingwiki-editor` to write and publish the Game data rows. |
+| **pcgamingwiki-editor** | Takes the hand-off, or runs alone for research-only drafting. Drafts new PCGW game articles and edits existing wikitext: infobox, taxonomy, availability, monetization, AI-usage fields, and especially the **Game data** section. Ships with PCGW's sample-article stubs (synced weekly) and a conventions reference covering template parameter orders, taxonomy gotchas and Ludusavi-relevant path formats. Can preview, publish and upload the cover through Claude in Chrome. |
 
-Both skills were written and used in the Claude desktop app on Windows. `pcgamingwiki-editor` works anywhere skills run; `game-save-recon` needs the desktop app, because it reads your disk and drives the game through computer use.
+Both skills were written and used in the Claude desktop app on Windows. `game-save-recon` needs the desktop app, because it reads your disk and drives the game through computer use; `pcgamingwiki-editor` works anywhere skills run.
 
 ## What to expect
 
