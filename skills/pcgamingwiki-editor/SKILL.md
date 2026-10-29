@@ -80,6 +80,8 @@ For later rounds of edits, resend only the updated `.txt` unless the cover chang
 
 ## Publishing through Claude in Chrome
 
+Use Claude in Chrome for every PCGW step (reading article or template source, previewing, saving, uploading), even when the session's preferred browser is the built-in browser. The user's PCGW sign-in lives in their Chrome, while the built-in browser's separate profile and the shell (`curl`) stall on PCGW's Cloudflare "verify you are human" check, which Claude must not try to complete, and WebFetch returns only a lossy summary of the rendered page. Fall back to the built-in browser only if the user asks for it.
+
 Read the `chrome-browser` skill first. Load the Chrome tools in one ToolSearch call, including `get_page_text`, `javascript_tool` and `find`. Work in a new tab and leave it on the finished article at the end.
 
 1. **Check the page and sign-in.** Navigate to `https://www.pcgamingwiki.com/wiki/<Title_with_underscores>` and `get_page_text`. "There is currently no text in this page" means it's new; the header shows the signed-in username. If no one is signed in, ask the user to sign in to PCGamingWiki in Chrome and wait; never type credentials. If it exists, edit only what the request covers.
@@ -139,6 +141,7 @@ Filling them:
 ## Workflow for editing existing wikitext
 
 If the person pastes existing article wikitext (or a file) and asks for changes/fixes:
+- Without pasted wikitext, read the live source with `/w/index.php?title=<Title>&action=raw` in Chrome. Don't rely on a WebFetch summary of the rendered page to say what the article does or doesn't contain; it can silently drop rows such as Availability entries and the infobox appid.
 - Preserve everything not related to the requested change.
 - If they report a parser error from previewing on the actual wiki, treat that as ground truth — it means a template parameter is malformed. Check `references/conventions.md` for the specific template's correct signature before proposing a fix; most parser errors trace back to a wrong parameter order, not a typo.
 - If they share an actual folder/file listing (screenshot or text) from their own install, that's the highest-confidence source available — prefer it over anything inferred from engine documentation, and update paths/notes accordingly.
